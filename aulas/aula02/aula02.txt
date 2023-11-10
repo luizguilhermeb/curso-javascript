@@ -1,0 +1,23 @@
+História
+
+- Em 1970 criaram a DARPA, uma organização dos EUA para criar tecnoligias para os EUA durante a guerra fria.
+
+- Foi criada a Arpanet, feita para conectar grandes quantidades de dados entre computadores
+
+- 1993: Tim Berners Lee e sua equipe fundaram o HTML e a WWW (World Wide Web), eles trabalhavam na empresa CERN que atuava em tecnologias nucleares.
+
+- No NCSA, Marc Andeersson criou o mosaic, o primeiro navegador de internet.
+
+- 1994: Marc Andeersson se juntou co o bilionário Jim Clark, fundador da Silicon Graphics, os dois juntos fundaram a Netscape. Tal empresa criou um navegador chamado Netscape, que se tornou o mais famoso da internet até aquele momento.
+
+- 1995: Brandon Nike criou a linguagem Moca que logo depois mudou para LiveScript, nessa época surgiu o Java, e numa jogada de marketing mudaram o nome de LiveScript para JavaScript, pois Java estava fazendo sucesso na época.
+
+- Microsoft criou o Internet Explorer e a linguagem JScript querendo copiar o JavaScript.
+
+- 1997: A empresa ECMA ajudou a padronizar o Javascript e criou a padronização ECMAScript
+
+- 2002: Criação do Mozilla Firefox pela Mozilla, remanescentes da falida Netscape.
+
+- 2008: Criação do Google Chrome que tinha um motor interno de Javascript muito poderoso, o V8, que foi criado em 2009.
+
+- 2010: Foi criado o NodeJS, feito para rodar Javascript fora do navegador.

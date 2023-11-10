@@ -1,0 +1,5 @@
+O que é Javascript?
+Linguagem de programação usada aplamente usada no client-side de websites.
+
+Client-side e server-side (Diferença):
+Client-side é o lado do cliente, ou seja, todas as tecnologias que envolvem o lado no cliente, já o server-side compõe processos do servidor, que geralmente não são vísiveis no lado do client.
