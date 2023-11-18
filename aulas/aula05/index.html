@@ -3,14 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aula 05</title>
+    <title>Aula 05 - Variáveis e Tipos Primitivos</title>
     <style>
       * {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: monospace;
       }
 
       body {
         background-color: #faebd7;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      p, ul, ol {
+        font-size: 1.5rem;
+      }
+
+      .codigo {
+        display: inline-block;
+        background-color: rgb(41, 41, 41);
+        color: rgb(105, 235, 105);
+        padding: 1px;
+        border-radius: 3px;
       }
     </style>
   </head>
@@ -20,25 +40,25 @@
     <p>Pode-se usar 2 formas:</p>
 
     <ol>
-      <li>(comenta apenas 1 linha): // Exemplo 1</li>
-      <li>(pode comentar várias linhas): /* Exemplo 2 */</li>
+      <li>(comenta apenas 1 linha):<span class="codigo"> // Exemplo 1</span></li>
+      <li>(pode comentar várias linhas):<span class="codigo"> /* Exemplo 2 */</span></li>
     </ol>
 
     <h1>Termos importantes para variáveis</h1>
 
     <p>
-      Quando colocamos um valor dentro de uma variável: (var n1 = 5) dizemos que
-      var n1 "recebe" 5. Chamamos tal relação de "atribuição"
+      Quando colocamos um valor dentro de uma variável: <span class="codigo">var n1 = 5</span> dizemos que
+      var <span class="codigo">n1</span> "recebe" <span class="codigo">5</span>. Chamamos tal relação de "atribuição"
     </p>
 
-    <p>"var" também pode ser substituído por "let"</p>
+    <p><span class="codigo">var</span> também pode ser substituído por <span class="codigo">let</span></p>
 
     <p>Há 3 formas de delimitar uma string dentro do Javascript:</p>
 
     <ul>
-      <li>var s1 = "Aspas duplas"</li>
-      <li>var s1 = 'Aspas Simples'</li>
-      <li>var s1 = `Crase`</li>
+      <li><span class="codigo">var s1 = "Aspas duplas"</span></li>
+      <li><span class="codigo">var s1 = 'Aspas Simples'</span></li>
+      <li><span class="codigo">var s1 = `Crase`</span></li>
     </ul>
 
     <p>É possível mudar o valor de uma variavel apenas fazendo uma nova atribuição</p>
@@ -56,12 +76,36 @@
 
     <h1>Coisas Importantes</h1>
 
-    <h2>Diferença de var e let</h2>
+    <h2>Diferença de <span class="codigo">var</span> e <span class="codigo">let</span></h2>
 
-    <p>Var é funcional em toda a função, já let em apenas um bloco específico, estudar mais posteriormente.</p>
+    <p><span class="codigo">Var</span> é funcional em toda a função, já <span class="codigo">let</span> em apenas um bloco específico, estudar mais posteriormente.</p>
 
     <h2>Diferença de string com aspas duplas, aspas simples e crase no uso de strings javascript.</h2>
 
     <p>Basicamente aspas simples e duplas são intercabíveis, a mais diferente é a crase pois adiciona algumas funcionalidades ao uso da string.</p>
+
+    <h1>Tipos Primitivos da Linguagem</h1>
+
+    <p>Para saber o tipo primitivo de uma variável basta usar o comando <span class="codigo">typeof variável-qualquer</span></p>
+
+    <h2>Principais</h2>
+
+    <ul>
+      <li><span class="codigo">String</span></li>
+      <li><span class="codigo">Number</span></li>
+      <li><span class="codigo">Boolean</span></li>
+    </ul>
+
+    <h2>Demais</h2>
+
+    <ul>
+      <li><span class="codigo">Infinity</span></li>
+      <li><span class="codigo">NaN</span></li>
+      <li><span class="codigo">Null</span></li>
+      <li><span class="codigo">Undefined</span></li>
+      <li><span class="codigo">Object</span></li>
+      <li><span class="codigo">Array</span></li>
+      <li><span class="codigo">Function</span></li>
+    </ul>
   </body>
 </html>
