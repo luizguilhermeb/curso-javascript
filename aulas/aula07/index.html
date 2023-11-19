@@ -3,33 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aula 7 - Operadores</title>
+    <title>Aula 7 - Operadores (Parte 1)</title>
     <style>
       body {
         background-color: antiquewhite;
         font-family: Arial, Helvetica, sans-serif;
       }
+
+      .codigo {
+        display: inline-block;
+        background-color: rgb(41, 41, 41);
+        color: rgb(105, 235, 105);
+        padding: 1px;
+        border-radius: 3px;
+      }
+
+      ul,
+      p {
+        font-size: 1.3em;
+      }
     </style>
   </head>
   <body>
-    <h1>Operadores em Javascript</h1>
+    <h1>Operadores em Javascript (Parte 1)</h1>
 
-    <h2>Operadores</h2>
+    <h2>Aritméticos</h2>
     <ul>
-        <li>+ (adição)</li>
-        <li>- (subtração)</li>
-        <li>* (multiplicação)</li>
-        <li>/ (divisão)</li>
-        <li>% (resto da divisão)</li>
-        <li>** (potenciação)</li>
+      <li><span class="codigo">+</span> (adição)</li>
+      <li><span class="codigo">-</span> (subtração)</li>
+      <li><span class="codigo">*</span> (multiplicação)</li>
+      <li><span class="codigo">/</span> (divisão)</li>
+      <li><span class="codigo">%</span> (resto da divisão)</li>
+      <li><span class="codigo">**</span> (potenciação)</li>
     </ul>
 
-    <h2>Ordem de Precedência</h2>
+    <h2><i>Ordem de Precedência</i></h2>
     <ul>
-        <li>()</li>
-        <li>**</li>
-        <li>*, /, %</li>
-        <li>+, -</li>
+      <li><span class="codigo">()</span></li>
+      <li><span class="codigo">**</span></li>
+      <li><span class="codigo">*, /, %</span></li>
+      <li><span class="codigo">+, -</span></li>
     </ul>
+
+    <h2>Auto-atribuições</h2>
+
+    <p>
+      É possível adicionar ou fazer qualquer operação dentro do valor já
+      atribuído na variável:
+    </p>
+
+    <ul>
+      <li><span class="codigo">var valor = 3</span></li>
+      <li><span class="codigo">valor += 4</span></li>
+      <li>valor = 7</li>
+    </ul>
+
+    <h2>Incremento e Decremento</h2>
+
+    <p>
+      Podemos incrementar uo decrementar 1 a qualquer valor de forma
+      simplificada com:
+    </p>
+
+    <ul>
+      <li><span class="codigo">var valor = 10</span></li>
+      <li><span class="codigo">valor++</span></li>
+      <li>valor = 10</li>
+      <li>valor = 11</li>
+    </ul>
+
+    <ul>
+      <li><span class="codigo">var valor = 10</span></li>
+      <li><span class="codigo">valor++</span></li>
+      <li>valor = 11</li>
+    </ul>
+
+    <p>O mesmo pode ser feito com <span class="codigo">-</span>.</p>
+
+    <h2>Diferença de var, let e const</h2>
+
+    <p>
+      <span class="codigo">var</span> pode ser usada em qualquer lugar do código
+      e pode ser reatribuído, <span class="codigo">let</span> tem escopo de
+      bloco e pode ser reatribuído, <span class="codigo">const</span> tem escopo
+      de bloco e não pode ser reatribuído.
+    </p>
   </body>
 </html>

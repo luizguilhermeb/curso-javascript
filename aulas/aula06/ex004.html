@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercício 4</title>
     <style>
-        * {
-            font-family: Arial, Helvetica, sans-serif;
-        }
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-        body {
-            background-color: #F5E7B7;
-        }
+      body {
+        background-color: #f5e7b7;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Hello Person</h1>
     <script>
-        var nome = window.prompt("Qual é seu nome?")
-        
-        document.write(`Olá <strong>${nome}</strong>, seu nome tem ${nome.length} letras <br>`) // fornece comprimento do nome
+      var nome = window.prompt("Qual é seu nome?");
 
-        document.write(`Olá <strong>${nome.toUpperCase()}</strong> <br>`) // função que deixa em maiúsculo
+      document.write(
+        `Olá <strong>${nome}</strong>, seu nome tem ${nome.length} letras <br>`
+      ); // fornece comprimento do nome
 
-        document.write(`Olá <strong>${nome.toLowerCase()}</strong> <br>`) // função que deixa em minúsculo
+      document.write(`Olá <strong>${nome.toUpperCase()}</strong> <br>`); // função que deixa em maiúsculo
 
-        //Também é possível aplicar um valor fixo para a quantidade de casas decimais e trocar o . por vírgula: valor.toFixed(5).replace('.', ',')
+      document.write(`Olá <strong>${nome.toLowerCase()}</strong> <br>`); // função que deixa em minúsculo
 
-        //Para tornar um valor escrito em qualquer moeda se usa isto: valor.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+      //Também é possível aplicar um valor fixo para a quantidade de casas decimais e trocar o . por vírgula: valor.toFixed(5).replace('.', ',')
 
-        //A sintaxe com chaves {} é usada em JavaScript para criar objetos.
+      //Para tornar um valor escrito em qualquer moeda se usa isto: valor.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+
+      //A sintaxe com chaves {} é usada em JavaScript para criar objetos.
     </script>
-</body>
+  </body>
 </html>
