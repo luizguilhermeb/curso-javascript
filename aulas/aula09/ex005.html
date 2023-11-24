@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 5 - DOM</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .codigo {
+        display: inline-block;
+        background-color: rgb(41, 41, 41);
+        color: rgb(105, 235, 105);
+        padding: 1px;
+        border-radius: 3px;
+      }
+
+      ul,
+      p {
+        font-size: 1.3em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="titulo-1">O que é DOM</h1>
+
+    <p>
+      O DOM (Document Object Model) é um conjunto de objetos integrados que
+      compõe todo um site.
+    </p>
+
+    <h1>Árvore DOM</h1>
+
+    <p>
+      É conjunto de objetos que integram o DOM ordenados por uma hierarquia.
+    </p>
+
+    <img src="arvore-dom.png" alt="Árvore DOM" />
+
+    <script>
+      // MODIFICAÇÕES
+
+      // window.document.write('Olá, Mundo') CHAMADA DO MÉTODO WRITE
+
+      // window.document.write(window.document.charset) CHAMADA PADRÃO CHARSET
+
+      // window.document.write(window.navigator.appName) CHAMADA DO NOME DO NAVEGADOR
+
+      // window.document.write(window.document.URL) CHAMADA DA URL
+
+      // LOCALIZAR ELEMENTOS NO HTML
+
+      var p1 = document.getElementsByTagName("p")[0];
+
+      // document.write(p1.innerText) ESCREVE O QUE ESTÁ DENTRO DE <p> ATRAVÉS DA PROPRIEDADE innerText
+
+      // document.write(p1.innerHTML) innerHTML leva em conta todas as tags
+
+      // p1.style.color = 'blue' MUDANÇA NO ESTILO
+
+      // document.getElementById('titulo-1').innerText = document.getElementById('titulo-1').innerText + '?' ADICIONA UMA ? AO PRIMEIRO TÍTULO
+
+      // USAR QUERY SELECTOR (MODO MAIS RECOMENDADO)
+
+      document.querySelector('#titulo-1').style.color = 'green'
+    </script>
+  </body>
+</html>
