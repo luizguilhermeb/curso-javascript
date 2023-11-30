@@ -17,10 +17,11 @@ body {
     border-radius: 1rem;
 }
 
-.codigo {
+code {
     display: inline-block;
     background-color: rgb(41, 41, 41);
     color: rgb(105, 235, 105);
     padding: 1px;
     border-radius: 3px;
+    font-size: 1rem;
 }

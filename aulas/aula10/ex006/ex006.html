@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 10 - DOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Usando o DOM</h1>
+
+    <h2>DIV exemplo</h2>
+
+    <div id="area" onclick="clicar()">
+      <p>Interaja</p>
+    </div>
+
+    <h2>Eventos DOM</h2>
+
+    <p>
+      É qualquer mudança de comportamento do usuário em relação aos elementos
+      HTML. EX: <code>mouseenter</code>, <code>mousemove</code>,
+      <code>mousedown</code>, <code>mouseup</code>, <code>click</code>,
+      <code>mouseout</code>. Basicamente há 2 formas de adicionar um event
+      listener:
+    </p>
+
+    <pre><code>
+&lt;div id="area" onclick="clicar()"&gt;
+  &lt;p&gt;Interaja&lt;/p&gt;
+&lt;/div&gt;  
+    </code></pre>
+
+    <p>e:</p>
+
+    <pre><code>
+var area = document.querySelector('#area')
+area.addEventListener('click', clicar)
+    </code></pre>
+
+    <h2>Função</h2>
+
+    <p>
+      Na DIV exemplo foram aplicadas 3 funções, <code>clicar()</code>,
+      <code>entrar()</code>, <code>sair()</code>. Cada uma delas é ativada a
+      partir de um evento. O exemplo abaixo mostra a function clicar():
+    </p>
+
+    <pre><code>
+function clicar() {
+  area.innerText = 'Clicou!'
+  area.style.backgroundColor = 'blue'
+}
+    </code></pre>
+
+    <script src="script.js"></script>
+  </body>
+</html>
