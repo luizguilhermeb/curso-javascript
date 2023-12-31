@@ -11,19 +11,19 @@ let frasePositiva = document.querySelector('#frase-positiva')
 if (horaSistema < 6) {
     imgHora.src = 'img/madrugada.jpg'
     frasePositiva.innerText = 'Aí não né, vai dormir!'
-    document.body.style.backgroundImage = 'linear-gradient(to top, #000000, #1f1d1d)'
+    document.body.style.backgroundColor = '#1f1d1d'
 } else if (horaSistema < 12) {
     imgHora.src = 'img/dia.jpg'
     frasePositiva.innerText = 'Tenha uma linda Manhã!'
-    document.body.style.backgroundImage = 'linear-gradient(to top, #eeff00, #ffc800)'
+    document.body.style.backgroundColor = '#ffe100'
 } else if (horaSistema < 18) {
     imgHora.src = 'img/tarde.jpg'
     frasePositiva.innerText = 'Tenha uma bela Tarde!'
-    document.body.style.backgroundImage = 'linear-gradient(to top, #ffb300, #ff9100)'
+    document.body.style.backgroundColor = '#3c8ddd'
 } else if (horaSistema < 24) {
     imgHora.src = 'img/noite.jpg'
     frasePositiva.innerText = 'Boa noite'
-    document.body.style.backgroundImage = 'linear-gradient(to top, #292626, #3c3838)'
+    document.body.style.backgroundColor = '#555151'
 }
 
 // Recebe o periodo do dia
@@ -69,22 +69,69 @@ function verificarHorario() {
         // Se o período do Dia atualizado for diferente do período do dia fixo, executa as mudanças no HTML
         if (periodoDiaFixo != periodoDia) {
             periodoDiaFixo = periodoDia
+
+            document.body.style.transition = '5s'
             if (horaSistema < 6) {
-                imgHora.src = 'img/madrugada.jpg'
-                frasePositiva.innerText = 'Aí não né, vai dormir!'
-                document.body.style.backgroundImage = 'linear-gradient(to top, #000000, #1f1d1d)'
+
+                imgHora.className = 'fade-out' // animacao de saida de imagem
+                setTimeout(function() { // espera X segundos e executa animação de entrada de imagem
+                    imgHora.src = 'img/madrugada.jpg'
+                    imgHora.className = 'fade-in' // animacao de entrada de imagem
+                }, 700);
+
+                // A mesma lógica de animação da imagem serve para a frasePositiva
+                frasePositiva.className = 'fade-out'
+                setTimeout(function() {
+                    frasePositiva.innerText = 'Aí não né, vai dormir!'
+                    frasePositiva.className = 'fade-in'
+                }, 700);
+                
+                document.body.style.backgroundColor = '#1f1d1d'
             } else if (horaSistema < 12) {
-                imgHora.src = 'img/dia.jpg'
-                frasePositiva.innerText = 'Tenha uma linda Manhã!'
-                document.body.style.backgroundImage = 'linear-gradient(to top, #eeff00, #ffc800)'
+                
+                imgHora.className = 'fade-out'
+                setTimeout(function() {
+                    imgHora.src = 'img/dia.jpg'
+                    imgHora.className = 'fade-in'
+                }, 700);
+
+                frasePositiva.className = 'fade-out'
+                setTimeout(function() {
+                    frasePositiva.innerText = 'Tenha uma linda Manhã!'
+                    frasePositiva.className = 'fade-in'
+                }, 700);
+
+                document.body.style.backgroundColor = '#ffe100'
             } else if (horaSistema < 18) {
-                imgHora.src = 'img/tarde.jpg'
-                frasePositiva.innerText = 'Tenha uma bela Tarde!'
-                document.body.style.backgroundImage = 'linear-gradient(to top, #ffb300, #ff9100)'
+
+                imgHora.className = 'fade-out'
+                setTimeout(function() {
+                    imgHora.src = 'img/tarde.jpg'
+                    imgHora.className = 'fade-in'
+                }, 700);
+
+                frasePositiva.className = 'fade-out'
+                setTimeout(function() {
+                    frasePositiva.innerText = 'Tenha uma bela Tarde!'
+                    frasePositiva.className = 'fade-in'
+                }, 700);
+
+                document.body.style.backgroundColor = '#3c8ddd'
             } else if (horaSistema < 24) {
-                imgHora.src = 'img/noite.jpg'
-                frasePositiva.innerText = 'Boa noite'
-                document.body.style.backgroundImage = 'linear-gradient(to top, #292626, #3c3838)'
+
+                imgHora.className = 'fade-out'
+                setTimeout(function() {
+                    imgHora.src = 'img/noite.jpg'
+                    imgHora.className = 'fade-in'
+                }, 700);
+
+                frasePositiva.className = 'fade-out'
+                setTimeout(function() {
+                    frasePositiva.innerText = 'Boa noite'
+                    frasePositiva.className = 'fade-in'
+                }, 700);
+
+                document.body.style.backgroundColor = '#555151'
             }
         }
     }
