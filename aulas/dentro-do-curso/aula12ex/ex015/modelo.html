@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Título</h1>
+    </header>
+    <main>
+      <form>
+        <div class="item-formulario">
+          <label for="ano-nascimento">Ano de Nascimento:</label>
+          <input
+            type="number"
+            name="name-ano-nascimento"
+            id="ano-nascimento"
+            min=""
+            max=""
+            required
+          />
+        </div>
+
+        <div class="item-formulario">
+          <span>Gênero:</span>
+          <input type="radio" name="genero" id="masculino" required />
+          <label for="masculino">Masculino</label>
+          <input type="radio" name="genero" id="feminino" />
+          <label for="feminino">Feminino</label>
+        </div>
+
+        <div class="item-formulario">
+          <input type="submit" value="Verificar" />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; Luiz Guilherme</p>
+    </footer>
+  </body>
+</html>
